@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 namespace HashTableProblem
 {
     class Program
@@ -16,7 +17,7 @@ namespace HashTableProblem
                 key++;
             }
             Operation operation = new Operation();
-            operation.Frequency(hash);
+            operation.Remove(hash, "avoidable");
         }
     }
 }
